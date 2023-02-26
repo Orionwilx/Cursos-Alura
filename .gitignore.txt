@@ -1,2 +1,2 @@
-Certificados-de-Alura/
-Challenge-Encriptador/
+/Certificados-de-Alura/*
+/Challenge-Encriptador/*
