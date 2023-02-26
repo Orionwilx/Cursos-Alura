@@ -1,0 +1,122 @@
+/* Parte superior HEADER */
+
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav{
+    display: flex;
+}
+
+/* CSS MAIN */
+
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-video{
+    flex-grow: 2;
+}
+.videoSobre-sobre{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+
+/* CSS del FOOTER */
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 252px;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%; 
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+/* RESPOSIVE DESING */
+
+@media (max-width:768px){
+
+    /*CSS HEADER*/
+
+    .headerPrincipal .container{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    /*CSS MAIN*/
+
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+        
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    /*CSS FOOTER*/
+
+    .rodapePrincipal-navMap-list{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        display: flex;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        display: flex;
+        
+    }
+}

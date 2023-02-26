@@ -1,0 +1,86 @@
+	
+<meta charset="utf-8">
+
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+
+	pincel.fillStyle="#82FE18";
+	pincel.fillRect(0,0,560,640);//fondo del gato
+	//************cabeza del gato******************
+	pincel.fillStyle="#444";      
+	pincel.fillRect(120,40,40,40);
+	pincel.fillStyle="#444";
+	pincel.fillRect(80,80,120,40);//oreja izquierda
+	pincel.fillStyle="#444";
+	pincel.fillRect(360,40,40,40);
+	pincel.fillStyle="#444";
+	pincel.fillRect(320,80,120,40);//oreja derecha
+	pincel.fillStyle="#444";
+	pincel.fillRect(80,120,360,240);//toda la cara
+	pincel.fillStyle="#fff";
+	pincel.fillRect(160,160,200,200)//blanco
+	pincel.fillStyle="#fff";
+	pincel.fillRect(120,320,280,40)
+	//bigotes********************
+	pincel.fillStyle="#000";
+	pincel.fillRect(40,240,40,40)
+	pincel.fillStyle="#000";
+	pincel.fillRect(40,320,40,40)
+	pincel.fillStyle="#000";
+	pincel.fillRect(440,240,40,40)
+	pincel.fillStyle="#000";
+	pincel.fillRect(440,320,40,40)
+	//ojos y nariz********************
+	pincel.fillStyle="#000";
+	pincel.fillRect(160,200,40,80)
+	pincel.fillStyle="#000";
+	pincel.fillRect(320,200,40,80)
+	pincel.fillStyle="#000";
+	pincel.fillRect(240,280,40,40)
+	//rosadas ********************
+	pincel.fillStyle="#f8a";
+	pincel.fillRect(120,80,40,40);
+	pincel.fillStyle="#f8a";
+	pincel.fillRect(360,80,40,40);
+	pincel.fillStyle="#f8a";
+	pincel.fillRect(80,280,80,40);
+	pincel.fillStyle="#f8a";
+	pincel.fillRect(360,280,80,40);
+	//collar de gato ********************
+	pincel.fillStyle="#FF5F15";
+	pincel.fillRect(200,360,120,40);
+	pincel.fillStyle="#ff0";
+	pincel.fillRect(240,360,40,40);
+	pincel.fillStyle="#f00";
+	pincel.fillRect(320,360,40,40);
+	//cuerpo **********
+	//gris oscuro!!!!!
+	pincel.fillStyle="#444";
+	pincel.fillRect(200,400,160,200);
+	pincel.fillStyle="#444";
+	pincel.fillRect(160,480,240,120);
+	pincel.fillStyle="#444";
+	pincel.fillRect(400,520,80,40);
+	pincel.fillStyle="#444";
+	pincel.fillRect(480,480,40,40);
+	//blanco!!!!!
+	pincel.fillStyle="#fff";
+	pincel.fillRect(240,440,80,160);
+	pincel.fillStyle="#fff";
+	pincel.fillRect(120,560,40,40);
+	pincel.fillStyle="#fff";
+	pincel.fillRect(200,560,40,40);
+	pincel.fillStyle="#fff";
+	pincel.fillRect(320,560,40,40);
+	pincel.fillStyle="#fff";
+	pincel.fillRect(400,560,40,40);
+	pincel.fillStyle="#fff";
+	pincel.fillRect(480,440,40,40);
+	//gris claro!!!!!
+	pincel.fillStyle="#aaa";
+	pincel.fillRect(240,520,80,80);
+</script>

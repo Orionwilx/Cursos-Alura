@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>ghola</h1>
+
+<script>
+    function saltarlinea() {
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function imprimir(frase) {
+        document.write( frase );
+        saltarlinea();
+    }
+
+    function calcularImc(peso, altura,){
+
+        return (peso/(altura*altura));
+    }
+    
+    var imputPeso = prompt("informe su peso ");
+    var imputAltura = prompt("informe su altura ");
+    var imputNombre = prompt("informe su nombre");
+
+    var imcCalculado = calcularImc(imputPeso, imputAltura);
+
+    imprimir("El imc de " + imputNombre +" es: " + imcCalculado);
+
+    
+
+
+</script>
