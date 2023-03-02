@@ -27,12 +27,17 @@
 }
 .videoSobre-video{
     flex-grow: 2;
+    flex-shrink: 2;
 }
 .videoSobre-sobre{
     display: flex;
     text-align: center;
     flex-direction: column;
 
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
 }
 
 
@@ -96,6 +101,12 @@
     .contenidoPrincipal-cursos-link{
         width: 100%;
     }
+
+    .videoSobre .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     /*CSS FOOTER*/
 
