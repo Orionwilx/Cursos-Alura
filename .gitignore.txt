@@ -1,3 +1,0 @@
-/Certificados-de-Alura/*
-/Challenge-Encriptador/*
-/Challenge-Encriptador/Imagenes/*
