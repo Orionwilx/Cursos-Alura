@@ -1,42 +1,28 @@
 import {CuentaCliente} from "./CuentaCorriente.js"
 import {Cliente} from './Cliente.js'
 
-const cliente1 = new Cliente();
+const cliente1 = new Cliente('Pepito', 1, '1111');
 
-cliente1.nombre = "Pepipo";
-cliente1.dniCliente = 2012384;
-cliente1.rutCliente = "RUTCLIENTE";
+const cliente2 = new Cliente('Maria', 2, '2222');
 
 
-const CuentaC1 = new CuentaCliente();
-CuentaC1.cliente = cliente1;
-CuentaC1.numeroCuenta = 1;
+
+const CuentaC1 = new CuentaCliente(cliente1, 'Bancolombia', 1);
 CuentaC1.deposiCuenta(1000);
-CuentaC1.agencia = "Bancolombia";
 
-
-
-const cliente2 = new Cliente();
-
-cliente2.nombre = "Maria";
-cliente2.dniCliente = 2012385;
-cliente2.rutCliente = "RUTCLIENTE";
-
-
-const CuentaC2 = new CuentaCliente();
-CuentaC2.cliente = cliente2;
-CuentaC2.numeroCuenta = 2;
+const CuentaC2 = new CuentaCliente(cliente2, 'BancoPopular', 2);
 CuentaC2.deposiCuenta(500);
-CuentaC2.agencia = "Bancolombia";
 
 
 
-let saldo = CuentaC1.verSaldo();
-console.log('El Saldo actual de Pepito es: '+ saldo);
 
-saldo = CuentaC2.verSaldo();
-console.log('El Saldo actual de Maria es: '+ saldo);
+// let saldo = CuentaC1.verSaldo();
+// console.log('El Saldo actual de Pepito es: '+ saldo);
 
-CuentaC1.trnsdferirParaCuenta(300, CuentaC2);
+// saldo = CuentaC2.verSaldo();
+// console.log('El Saldo actual de Maria es: '+ saldo);
 
+// CuentaC1.trnsdferirParaCuenta(300, CuentaC2);
 
+console.log(CuentaC1.cliente);
+console.log(CuentaCliente.cantidadCuentas);

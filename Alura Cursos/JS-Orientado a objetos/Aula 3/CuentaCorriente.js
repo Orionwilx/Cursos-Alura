@@ -1,18 +1,28 @@
+import { Cliente } from "./Cliente.js";
 
 
 export class CuentaCliente
 {
-    cliente;
+    #cliente;
     agencia;
     numeroCuenta;
     #saldo;
+    static cantidadCuentas = 0;
     
+    set cliente(valor){
+        if(valor instanceof Cliente)
+            this.#cliente = valor;
+    }
+    get cliente(){
+        return this.#cliente;
+    }
 
-    constructor(){
-        this.cliente = null;
-        this.agencia = '';
-        this.numeroCuenta = 0;
+    constructor(cliente, agencia, numeroCuenta){
+        this.cliente = cliente;
+        this.agencia = agencia;
+        this.numeroCuenta = numeroCuenta;
         this.#saldo = 0;
+        CuentaCliente.cantidadCuentas++;
         
     }
 
