@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable n/handle-callback-err */
 import { clientServices } from '../service/client-service.js';
 
 const crearNuevaLinea = (nombre, email, id) => {
